@@ -1,3 +1,15 @@
+//TAG_WEIGHT ve TAG_BARCODE değerlerini sistemindeki gerçek isimlerle eşleştir.
+//SPEC sözlüğünü barkod → (nominal, tolerans) doldur.
+//Z-score modu için:
+//SAME_DIR=true → hepsi aynı yönde (tamamı pozitif ya da tamamı negatif sapma).
+//SAME_DIR=false → çoğunluk (en az MIN_STRONG ölçümde |z|>K).
+
+//PER_BARCODE_COOLDOWN ile barkoda özgü “hit tekrarını” boğarsın; global CooldownMs ile birlikte spam’ı azaltır.
+//Tek pencere her barkod için ayrı tutulur; barkod değişince otomatik yeni pencereye yazmaya başlar.
+
+
+
+
 //parametreleri değiştirerek spec (nominal±tol), z-score ya da ikisi birden çalıştır
 // ====== USING'ler (gerekirse) ======
 using System;
