@@ -85,6 +85,8 @@ rule.Observe(new PlcEvent { Address = "SensorTemp1", ValueText = "1", TsUtc = Da
 
 **Behavior:** Rules are applied only to selected addresses using wildcards.
 
+### 4. With Custom Script
+
 ```csharp
 // BooleanChatter (min ON/OFF + toggle sayısı)
 // Parametreler
